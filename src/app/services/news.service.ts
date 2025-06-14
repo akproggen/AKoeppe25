@@ -22,7 +22,8 @@ interface NewsResponse {
 })
 export class NewsService {
   private apiKey = '8440fac4a9064da2a189a0795feb5c30'; // Replace with your NewsAPI key
-  private apiUrl = `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${this.apiKey}`;
+  private apiURL01= 'https://newsapi.org/v2/top-headlines?country=us&category=business&';
+  private apiUrl = `${this.apiURL01}apiKey=${this.apiKey}`;
 
   constructor(private http: HttpClient) {}
 
